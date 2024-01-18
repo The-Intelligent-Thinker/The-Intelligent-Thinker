@@ -1,5 +1,105 @@
 # The Intelligent Thinker
 
-<h1>
-  <img src="https://raw.githubusercontent.com/The-Intelligent-Thinker/Required-Files/0ba4d8d773244c2e352f8d33ab2d2c6baccd60b4/Document/logo/TIT%20Company%20Logo.JPG">
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Intelligent Thinker (T. I. T.)</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+        header, footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        main {
+            padding: 20px;
+        }
+        .card {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        /* Add more styles as needed */
+    </style>
+    <script>
+              // Initialize the Botpress Webchat
+        const webchat = new window.WebChat();
+        // Add your configuration options if needed
+        const config = {
+            // Your configuration options go here
+        };
+        // Mount the webchat to the container
+        webchat.mount(document.getElementById('botpress-webchat'), config);
+    </script>
+    <!-- Include any external libraries for chatbot or other functionalities -->
+    <!-- For example, you might use the Botpress Chatbot library -->
+    <script src="https://cdn.botpress.io/web/assets/js/botpress-webchat.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blockchain">Blockchain</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Cyber Warfare Services</h2>
+            <p>Empowering organizations with advanced cybersecurity solutions.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="card">
+                <h3>Cyber Security</h3>
+                <p>Protecting your digital assets from cyber threats.</p>
+            </div>
+            <div class="card">
+                <h3>Cloud Security</h3>
+                <p>Securing your cloud infrastructure and services.</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a team of dedicated professionals providing top-notch cybersecurity services.</p>
+        </section>
+        <section id="blockchain">
+            <h2>Blockchain Team</h2>
+            <p>Exploring the latest advancements in blockchain technology to enhance security.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Reach out to us for customized cybersecurity solutions tailored to your needs.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cyber Warfare Services. All rights reserved.</p>
+    </footer>
+    <div id="chatbot-container">
+        <div id="botpress-webchat" role="button" tabindex="0" aria-label="Open Chatbot"></div>
+    </div>
+</body>
+</html>
